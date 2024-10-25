@@ -1,0 +1,322 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DFE2FE;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+}
+
+#search {
+    transition: transform 0.5s ease;
+    position: relative; /* Position relative for absolute child elements */
+}
+
+.block {
+    width: 1320px;
+    height: 152px;
+    background-color: lightblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 0; /* Start invisible */
+}
+
+.block.show {
+    opacity: 1; /* Make visible */
+}
+
+#block1 {
+    bottom: -152px; /* Start below the viewport */
+}
+
+#block2 {
+    bottom: -152px; /* Start below the viewport */
+}
+
+.reset-text {
+    display: none; /* Hide reset text initially */
+    cursor: pointer; /* Change cursor to pointer */
+    color: black; /* Change color to indicate clickable text */
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+p{
+    display: block;
+    margin: 0;
+}
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+#search{
+    margin-top: 360px;
+}
+
+.find-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.book-find{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.add{
+    font-size: 18px;
+    color: #8E98F5;
+    font-style: italic;
+}
+
+#find {
+    display: grid;
+    margin-top: 12px;
+}
+
+input, .find-btn{
+    padding: 24px 0 24px 28px;
+    font-size: 16px;
+    border: none; 
+    border: 1px solid black;
+    outline: none;
+}
+
+.find-stroke{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.author-stroke{
+    margin: -1px -1px -1px 0;
+}
+
+.genre-stroke{
+    margin: -1px;
+}
+
+.find-btn{
+    cursor: pointer;
+    margin: -1px 0px -1px 0;
+    background-color: #8884F3;
+    color: #fff;
+    padding: 0;
+}
+
+.form{
+    width: 874px;
+    height: 620px;
+    background-color: #fff;
+    margin-top: 230px;
+    margin-left: 523px;
+}
+
+.comeback{
+    padding-top: 40px;
+    margin-left: 60px;
+}
+
+.newuser{
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: 16px;
+}
+
+.form-data{
+    display: flex;
+}
+
+.text{
+    margin-top: 65px;
+    margin-left: 60px;
+}
+
+.text-form{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    width: 182px;
+}
+
+.fam{
+    width: 558px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    padding-left: 16px;
+    margin-top: 24px;
+}
+
+.name{
+    width: 558px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    padding-left: 16px;
+    margin-top: 24px;
+}
+
+.birth{
+    width: 214px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    padding-left: 16px;
+    margin-top: 24px;
+    margin-right: 200px;
+}
+
+.telephone{
+    width: 275px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    padding-left: 16px;
+    margin-top: 24px;
+}
+
+.input{
+    margin-top: 36px;
+    margin-left: 32px;
+}
+
+.add-button{
+    width: 324px;
+    height: 60px;
+    border: 1px solid #000000;
+    background-color: #8884F3;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 100;
+    padding: 0;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 275px;
+}
+
+
+
+
+.card{
+    width: 1320px;
+    height: 152px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px;
+}
+
+/* .return{
+    width: 1320px;
+    height: 152px;
+    background-color: #fff;
+    display: flex;
+    border: solid 1px;
+    margin-top: 50px;
+} */
+
+.plus-img{
+    cursor: pointer;
+    padding: 34px 60px;
+    border-left: 1px solid;
+} 
+
+.book{
+    padding: 28px;
+}
+
+.book-name{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.author{
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.genre{
+    font-size: 20px;
+    width: 400px;
+}
+
+.name-user{
+    font-size: 20px;
+}
+
+.book-user{
+    font-size: 20px;
+    color: #8C8C8C;
+}
+
+.return-txt{
+    margin-left: -1px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 64px 27px;
+    border-left: 1px solid;
+    cursor: pointer;
+}
+
+.return-txt:hover{
+    background-color: #8884F3;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
